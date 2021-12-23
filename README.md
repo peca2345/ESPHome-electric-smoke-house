@@ -19,6 +19,9 @@ LCD displej:              shorturl.at/jyRVX
 # Schéma zapojení
 
 
+# Galerie
+https://photos.app.goo.gl/iQ432f7vACJFKvrUA
+
 # ESPHome code
 ```
 interval:
@@ -342,5 +345,4 @@ output:
     period: 30s
   
 ```
-# Galerie
 
