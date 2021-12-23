@@ -13,7 +13,7 @@ Uprav zařízení a pod vygenerovaný kód nakopíruj kód níže
 ESP8266 4CH relay board: shorturl.at/qCTV0
 
 
-
+# Schéma zapojení
 
 
 # ESPHome code
