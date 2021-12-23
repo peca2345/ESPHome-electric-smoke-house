@@ -36,8 +36,6 @@ wifi:
     dns2: 1.1.1.1
 captive_portal:
 
-###### vse co je vyse ponechej jak ti ESPHome vygeneroval a zkopiruj jen cast kodu nize
-
 interval:
   - interval: 5s
     then:
