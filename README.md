@@ -23,13 +23,13 @@ esphome:
 logger:
 api:
 ota:
-  password: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" 
+  password: "ponechej_puvodni"
 wifi:
   networks:
-  - ssid: "xxxxxx"  
-    password: "xxxxxx" 
-  manual_ip: # pokud vymazes manual IP i s podnastavenim tak bude predelena nahodna IP z DHCP serveru
-    static_ip: 192.168.1.46 
+  - ssid: "nazev_WIFI_site"
+    password: "heslo" 
+  manual_ip:
+    static_ip: 192.168.1.46
     gateway: 192.168.1.1
     subnet: 255.255.255.0  
     dns1: 192.168.1.1
@@ -59,7 +59,10 @@ mcp23017:
 dallas: 
   - pin: GPIO2
     update_interval: 10s
-    
+      
+###############################################################
+##### PID TERMOSTAT ###########################################
+
 climate:
   - platform: pid
     id: pid_climate
@@ -75,7 +78,10 @@ climate:
       kp: 0.22224  #0.03277 #0.49460  Pásmo proporcionality - určité změně na vstupu odpovídá určitá změna na výstupu
       ki: 0.00067  #0.00004 #0.00487  Integrační čas - určité změně na vstupu odpovídá určitá rychlost na výstupu
       kd: 18.41252 #6.69813 #12.56301 Derivační čas - určité rychlosti změny na vstupu odpovídá určitá poloha regulačního orgánu
-      
+
+###############################################################
+###### LCD DISPLEJ ############################################
+
 display:
   - platform: lcd_pcf8574
     dimensions: 20x4
@@ -87,11 +93,17 @@ display:
       it.printf(0, 2, "Maso 2: %.1f", id(iudirna_teplota3).state);
       it.printf(0, 3, "Dymbox: %.1f", id(iudirna_teplota4).state);
       it.printf(13, 3, " T=%.1f", id(iudirna_up_time).state);     
-    
+
+###############################################################  
+#####  WIFI SIGNAL  ###########################################
 sensor:
   - platform: wifi_signal
     name: "iudirna_wifi_signal"
     update_interval: 10s    
+
+###############################################################  
+#####  PID SENSORY  ###########################################
+
   - platform: pid
     name: "iUdirna PID Climate Result"
     type: RESULT
@@ -108,7 +120,7 @@ sensor:
     name: "iUdirna PID Climate DERIVATIVE"
     type: DERIVATIVE
     climate_id: pid_climate
-  - platform: pid   # slouzi pro grafanu
+  - platform: pid #slouzi pro grafanu
     name: "iUdirna PID Climate HEAT"
     type: HEAT
     climate_id: pid_climate
@@ -128,43 +140,54 @@ sensor:
     name: "iUdirna PID Climate KD"
     type: KD
     climate_id: pid_climate
-       
 
-  - platform: dallas  # teplomer v udirne
+###############################################################   
+#####  TEPLOMERY  #############################################
+    
+## UDIRNA
+  - platform: dallas 
     name: "iudirna_dallas_teplota1"
     address: 0xC106219415E16428
     id: iudirna_teplota1
     unit_of_measurement: "°C"  
 
-  - platform: dallas # teplomer vrchni maso
+## MASO1
+  - platform: dallas
     name: "iudirna_dallas_teplota2"
     address: 0xBE06219419160728
     id: iudirna_teplota2
     unit_of_measurement: "°C"  
 
-  - platform: dallas # teplomer spodni maso
+## MASO2
+  - platform: dallas
     name: "iudirna_dallas_teplota3"
     address: 0xB101215744DA0B28
     id: iudirna_teplota3
     unit_of_measurement: "°C"  
 
-  - platform: dallas # teplomer dymbox
+# DYMBOX
+  - platform: dallas
     name: "iudirna_dallas_teplota4"
     address: 0xB9012157542A0228
     id: iudirna_teplota4
     unit_of_measurement: "°C"  
 
-  - platform: uptime # doba uzeni
+# UPTIME - doba uzeni
+  - platform: uptime
     id: iudirna_up_time
     name: "iUdirna_time"
     update_interval: 60s
     filters:
       - lambda: return x / 3600;
     unit_of_measurement: "h"
-      
+     
+###############################################################    
+#####  TLACITKA  ##############################################
+
 binary_sensor:
 
-  - platform: gpio ## LED KONTROLKA SVETLO VNITRNI 
+# LED KONTROLKA SVETLO VNITRNI 
+  - platform: gpio
     name: "iudirna_button8_svetlo_vnitrni"
     pin:
       mcp23xxx: mcp23017_hub
@@ -178,7 +201,8 @@ binary_sensor:
     on_press:
     - switch.toggle: iudirna_svetlo_in_template
     
-  - platform: gpio ## LED KONTROLKA SVETLO VENKOVNI  
+# LED KONTROLKA SVETLO VENKOVNI    
+  - platform: gpio
     name: "iudirna_button9_svetlo_venkovni"
     pin:
       mcp23xxx: mcp23017_hub
@@ -191,8 +215,9 @@ binary_sensor:
         - delayed_on: 10ms
     on_press:
     - switch.toggle: iudirna_svetlo_out_template
-      
-  - platform: gpio ## TLACITKO TERMOSTAT CILOVA TEPLOTA +1°C 
+    
+# TLACITKO TERMOSTAT CILOVA TEPLOTA +1°C   
+  - platform: gpio
     name: "iudirna_button10_set_temp_up"
     pin:
       mcp23xxx: mcp23017_hub
@@ -210,7 +235,8 @@ binary_sensor:
             mode: 'HEAT'
             target_temperature: !lambda return (id(pid_climate).target_temperature + 1.0);
 
-  - platform: gpio ## TLACITKO TERMOSTAT CILOVA TEPLOTA -1°C
+# TLACITKO TERMOSTAT CILOVA TEPLOTA -1°C
+  - platform: gpio
     name: "iudirna_button11_set_temp_down"
     pin:
       mcp23xxx: mcp23017_hub
@@ -227,10 +253,14 @@ binary_sensor:
             id: pid_climate
             mode: 'HEAT'
             target_temperature: !lambda return (id(pid_climate).target_temperature - 1.0);
-                            
+      
+###############################################################          
+#####  RELE  ##################################################
+
 switch:
 
-  - platform: gpio ## RELE2 - vnitrni svetlo
+# RELE2 - vnitrni svetlo
+  - platform: gpio
     pin: GPIO12
     id: iudirna_svetlo_in
   - platform: template # COOLDOWN SWITCH OFF
@@ -247,7 +277,8 @@ switch:
           - switch.turn_off: iudirna_svetlo_in
           - switch.turn_off: iudirna_led1_vnitrni_svetlo   
           
-  - platform: gpio ## RELE3 - venkovni svetlo 
+# RELE3 - venkovni svetlo    
+  - platform: gpio
     pin: GPIO14
     id: iudirna_svetlo_out
   - platform: template # COOLDOWN SWITCH OFF
@@ -263,8 +294,18 @@ switch:
         else:
           - switch.turn_off: iudirna_svetlo_out
           - switch.turn_off: iudirna_led2_venkovni_svetlo 
-             
-  - platform: gpio ## LED1 - kontrolka vnitrni svetlo - zluta      
+          
+# RELE4 - NEPOUZITO  
+#  - platform: gpio
+#    pin: GPIO13
+#    name: iudirna_rele4_free
+#    id: iudirna_rele4   
+
+###############################################################
+#####  LED KONTROLKY  #########################################
+
+  # LED1 - kontrolka vnitrni svetlo - zluta
+  - platform: gpio      
     name: "iudirna_led1_vnitrni_svetlo"
     id: "iudirna_led1_vnitrni_svetlo"
     pin:
@@ -275,7 +316,8 @@ switch:
         pullup: false
       inverted: false 
 
-  - platform: gpio ## LED2 - kontrolka venkovni svetlo - zluta     
+  # LED2 - kontrolka venkovni svetlo - zluta
+  - platform: gpio      
     name: "iudirna_led2_venkovni_svetlo"
     id: "iudirna_led2_venkovni_svetlo"
     pin:
@@ -285,8 +327,9 @@ switch:
         output: true
         pullup: false
       inverted: false 
-       
-  - platform: gpio ## LED3 - WIFI status - modra     
+      
+  # LED3 - WIFI status - modra
+  - platform: gpio      
     name: "iudirna_led3_wifi_status"
     id: "iudirna_led3_wifi_status"
     pin:
@@ -297,19 +340,22 @@ switch:
         pullup: false
       inverted: false 
 
-   
-  - platform: template ## PID - autotune 
+###############################################################
+#####  PID AUTOTUNE  ##########################################
+
+# PID - autotune    
+  - platform: template
     name: "iUdirna PID Climate Autotune"
     turn_on_action:
       - climate.pid.autotune: pid_climate
       
-   
+# PID - PWM output     
 output:
-  - platform: slow_pwm ## PID - PWM output  
+  - platform: slow_pwm
     pin: GPIO16
     id: heater
     period: 30s
-
+  
 ```
 # Galerie
 
