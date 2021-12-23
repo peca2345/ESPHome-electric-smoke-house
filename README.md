@@ -15,7 +15,7 @@ https://www.aliexpress.com/item/1005001653206405.html?dp=608841a56be8eefc6c2eed3
 
 
 # ESPHome code
-
+```
 esphome:
   name: venek-iudirna
   platform: ESP8266
@@ -310,6 +310,6 @@ output:
     id: heater
     period: 30s
 
-
+```
 # Galerie
 
