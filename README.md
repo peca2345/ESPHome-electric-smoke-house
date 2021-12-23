@@ -11,15 +11,16 @@ Uprav zařízení a pod vygenerovaný kód nakopíruj kód níže
 
 # Použité komponenty
 
-[ESP8266 4CH relay board](shorturl.at/qCTV0)
+[ESP8266 4CH relay board](https://www.aliexpress.com/item/32948585494.html?dp=608841a56be8eefc6c2eed35&cn=ah&aff_fcid=6b02168ff7f54818a786e9c21d401c2f-1640297845925-05877-_9IM1Y0&tt=CPS_NORMAL&aff_fsk=_9IM1Y0&aff_platform=portals-tool&sk=_9IM1Y0&aff_trace_key=6b02168ff7f54818a786e9c21d401c2f-1640297845925-05877-_9IM1Y0&terminal_id=d7554e9ae9fe4e76878e8694ca0d1dcc)
+![This is an image](https://ae01.alicdn.com/kf/H12cf3b6621e746248561a5826da39a68f/DC-5V-ESP8266-ESP-12F-ESP12F-4-Channel-WiFi-Relay-Module-4-Channel-Relay-Module-For.jpg_Q90.jpg_.webp)
 
-[SSR rele](shorturl.at/ltyCD)
+[SSR rele](https://shorturl.at/ltyCD)
 
-[SSR rele chladič V1](shorturl.at/nxMNQ)
+[SSR rele chladič V1](https://shorturl.at/nxMNQ)
 
-[SSR rele chladič V2](shorturl.at/pLQYZ)
+[SSR rele chladič V2](https://shorturl.at/pLQYZ)
 
-[LCD displej](shorturl.at/jyRVX)
+[LCD displej](https://shorturl.at/jyRVX)
 
 # Schéma zapojení
 
