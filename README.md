@@ -1,14 +1,16 @@
-# ESPHome-udirna
-Home Assistant
+# Postup
+Je nutne mít Home Assistant (dále jen HA) server třeba na Raspberry Pi3 nebo lepší.
+V HA si nainstalujte doplněk ESPHome (oficiální integrace)
+V ESPHome vytvoř nové zařízení postavené na ESP8266 a zadej název tvojí WIFI a heslo.
+Uprav zařízení a pod vygenerovaný kód nakopíruj kód níže
 
 
 
 
 
 
-# ESP8266 4CH relay board 
-aliexpress:
-https://www.aliexpress.com/item/1005001653206405.html?dp=608841a56be8eefc6c2eed35&cn=ah&aff_fcid=65113b0f3e814f90882a6b659f9fd00a-1639220280193-06449-_sSETun&aff_fsk=_sSETun&aff_platform=link-c-tool&sk=_sSETun&aff_trace_key=65113b0f3e814f90882a6b659f9fd00a-1639220280193-06449-_sSETun&terminal_id=41cd1311f2d14a61af0663539f25bee6
+# Použité komponenty
+ESP8266 4CH relay board: shorturl.at/qCTV0
 
 
 
@@ -16,26 +18,6 @@ https://www.aliexpress.com/item/1005001653206405.html?dp=608841a56be8eefc6c2eed3
 
 # ESPHome code
 ```
-esphome:
-  name: venek-iudirna
-  platform: ESP8266
-  board: esp12e # ESP12F 4ch relay board
-logger:
-api:
-ota:
-  password: "ponechej_puvodni"
-wifi:
-  networks:
-  - ssid: "nazev_WIFI_site"
-    password: "heslo" 
-  manual_ip:
-    static_ip: 192.168.1.46
-    gateway: 192.168.1.1
-    subnet: 255.255.255.0  
-    dns1: 192.168.1.1
-    dns2: 1.1.1.1
-captive_portal:
-
 interval:
   - interval: 5s
     then:
