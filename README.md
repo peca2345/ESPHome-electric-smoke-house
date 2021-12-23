@@ -60,9 +60,6 @@ dallas:
   - pin: GPIO2
     update_interval: 10s
     
-###############################################################
-##### PID TERMOSTAT ###########################################
-
 climate:
   - platform: pid
     id: pid_climate
@@ -79,13 +76,6 @@ climate:
       ki: 0.00067  #0.00004 #0.00487  Integrační čas - určité změně na vstupu odpovídá určitá rychlost na výstupu
       kd: 18.41252 #6.69813 #12.56301 Derivační čas - určité rychlosti změny na vstupu odpovídá určitá poloha regulačního orgánu
       
-## hodnoty vyse ziskame z funkce autotune (trva to dlouho a ma to 5 fazi)
-## pro spravnou funkcni autotune musi byt hodnot PID vyse vsechny na 0
-## po dokonceni autotune vezmeme z logu hodnoty PID a zapiseme je vyse
-
-###############################################################
-###### LCD DISPLEJ ############################################
-
 display:
   - platform: lcd_pcf8574
     dimensions: 20x4
@@ -98,17 +88,10 @@ display:
       it.printf(0, 3, "Dymbox: %.1f", id(iudirna_teplota4).state);
       it.printf(13, 3, " T=%.1f", id(iudirna_up_time).state);     
     
-
-###############################################################  
-#####  WIFI SIGNAL  ###########################################
 sensor:
   - platform: wifi_signal
     name: "iudirna_wifi_signal"
     update_interval: 10s    
-
-###############################################################  
-#####  PID SENSORY  ###########################################
-
   - platform: pid
     name: "iUdirna PID Climate Result"
     type: RESULT
@@ -145,40 +128,33 @@ sensor:
     name: "iUdirna PID Climate KD"
     type: KD
     climate_id: pid_climate
-    
-###############################################################   
-#####  TEPLOMERY  #############################################
-    
-## UDIRNA
-  - platform: dallas 
+       
+
+  - platform: dallas  # teplomer v udirne
     name: "iudirna_dallas_teplota1"
     address: 0xC106219415E16428
     id: iudirna_teplota1
     unit_of_measurement: "°C"  
 
-## MASO1
-  - platform: dallas
+  - platform: dallas # teplomer vrchni maso
     name: "iudirna_dallas_teplota2"
     address: 0xBE06219419160728
     id: iudirna_teplota2
     unit_of_measurement: "°C"  
 
-## MASO2
-  - platform: dallas
+  - platform: dallas # teplomer spodni maso
     name: "iudirna_dallas_teplota3"
     address: 0xB101215744DA0B28
     id: iudirna_teplota3
     unit_of_measurement: "°C"  
 
-## DYMBOX
-  - platform: dallas
+  - platform: dallas # teplomer dymbox
     name: "iudirna_dallas_teplota4"
     address: 0xB9012157542A0228
     id: iudirna_teplota4
     unit_of_measurement: "°C"  
 
-## UPTIME - doba uzeni
-  - platform: uptime
+  - platform: uptime # doba uzeni
     id: iudirna_up_time
     name: "iUdirna_time"
     update_interval: 60s
@@ -186,13 +162,9 @@ sensor:
       - lambda: return x / 3600;
     unit_of_measurement: "h"
       
-###############################################################    
-#####  TLACITKA  ##############################################
-
 binary_sensor:
 
-## LED KONTROLKA SVETLO VNITRNI 
-  - platform: gpio
+  - platform: gpio ## LED KONTROLKA SVETLO VNITRNI 
     name: "iudirna_button8_svetlo_vnitrni"
     pin:
       mcp23xxx: mcp23017_hub
@@ -206,8 +178,7 @@ binary_sensor:
     on_press:
     - switch.toggle: iudirna_svetlo_in_template
     
-## LED KONTROLKA SVETLO VENKOVNI    
-  - platform: gpio
+  - platform: gpio ## LED KONTROLKA SVETLO VENKOVNI  
     name: "iudirna_button9_svetlo_venkovni"
     pin:
       mcp23xxx: mcp23017_hub
@@ -220,9 +191,8 @@ binary_sensor:
         - delayed_on: 10ms
     on_press:
     - switch.toggle: iudirna_svetlo_out_template
-    
-## TLACITKO TERMOSTAT CILOVA TEPLOTA +1°C   
-  - platform: gpio
+      
+  - platform: gpio ## TLACITKO TERMOSTAT CILOVA TEPLOTA +1°C 
     name: "iudirna_button10_set_temp_up"
     pin:
       mcp23xxx: mcp23017_hub
@@ -240,8 +210,7 @@ binary_sensor:
             mode: 'HEAT'
             target_temperature: !lambda return (id(pid_climate).target_temperature + 1.0);
 
-## TLACITKO TERMOSTAT CILOVA TEPLOTA -1°C
-  - platform: gpio
+  - platform: gpio ## TLACITKO TERMOSTAT CILOVA TEPLOTA -1°C
     name: "iudirna_button11_set_temp_down"
     pin:
       mcp23xxx: mcp23017_hub
@@ -259,13 +228,9 @@ binary_sensor:
             mode: 'HEAT'
             target_temperature: !lambda return (id(pid_climate).target_temperature - 1.0);
                             
-###############################################################          
-#####  RELE  ##################################################
-
 switch:
 
-## RELE2 - vnitrni svetlo
-  - platform: gpio
+  - platform: gpio ## RELE2 - vnitrni svetlo
     pin: GPIO12
     id: iudirna_svetlo_in
   - platform: template # COOLDOWN SWITCH OFF
@@ -282,8 +247,7 @@ switch:
           - switch.turn_off: iudirna_svetlo_in
           - switch.turn_off: iudirna_led1_vnitrni_svetlo   
           
-## RELE3 - venkovni svetlo    
-  - platform: gpio
+  - platform: gpio ## RELE3 - venkovni svetlo 
     pin: GPIO14
     id: iudirna_svetlo_out
   - platform: template # COOLDOWN SWITCH OFF
@@ -299,18 +263,8 @@ switch:
         else:
           - switch.turn_off: iudirna_svetlo_out
           - switch.turn_off: iudirna_led2_venkovni_svetlo 
-          
-## RELE4 - NEPOUZITO  
-##  - platform: gpio
-##    pin: GPIO13
-##    name: iudirna_rele4_free
-##    id: iudirna_rele4   
-
-###############################################################
-#####  LED KONTROLKY  #########################################
-
-  ## LED1 - kontrolka vnitrni svetlo - zluta
-  - platform: gpio      
+             
+  - platform: gpio ## LED1 - kontrolka vnitrni svetlo - zluta      
     name: "iudirna_led1_vnitrni_svetlo"
     id: "iudirna_led1_vnitrni_svetlo"
     pin:
@@ -321,8 +275,7 @@ switch:
         pullup: false
       inverted: false 
 
-  ## LED2 - kontrolka venkovni svetlo - zluta
-  - platform: gpio      
+  - platform: gpio ## LED2 - kontrolka venkovni svetlo - zluta     
     name: "iudirna_led2_venkovni_svetlo"
     id: "iudirna_led2_venkovni_svetlo"
     pin:
@@ -332,9 +285,8 @@ switch:
         output: true
         pullup: false
       inverted: false 
-      
-  ## LED3 - WIFI status - modra
-  - platform: gpio      
+       
+  - platform: gpio ## LED3 - WIFI status - modra     
     name: "iudirna_led3_wifi_status"
     id: "iudirna_led3_wifi_status"
     pin:
@@ -345,18 +297,15 @@ switch:
         pullup: false
       inverted: false 
 
-###############################################################
-#####  PID AUTOTUNE  ##########################################
-
-## PID - autotune    
-  - platform: template
+   
+  - platform: template ## PID - autotune 
     name: "iUdirna PID Climate Autotune"
     turn_on_action:
       - climate.pid.autotune: pid_climate
       
-## PID - PWM output     
+   
 output:
-  - platform: slow_pwm
+  - platform: slow_pwm ## PID - PWM output  
     pin: GPIO16
     id: heater
     period: 30s
