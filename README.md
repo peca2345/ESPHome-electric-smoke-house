@@ -22,6 +22,9 @@ LCD displej:              shorturl.at/jyRVX
 # Galerie
 https://photos.app.goo.gl/iQ432f7vACJFKvrUA
 
+# 3D Tisk
+
+
 # ESPHome code
 ```
 interval:
