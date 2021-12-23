@@ -1,10 +1,10 @@
 # Postup
+`
 Je nutne mít Home Assistant (dále jen HA) server třeba na Raspberry Pi3 nebo lepší.
 V HA si nainstalujte doplněk ESPHome (oficiální integrace)
 V ESPHome vytvoř nové zařízení postavené na ESP8266 a zadej název tvojí WIFI a heslo.
 Uprav zařízení a pod vygenerovaný kód nakopíruj kód níže
-
-
+`
 
 
 
