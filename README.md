@@ -57,9 +57,9 @@ climate:
       temperature_step: 1
     heat_output: heater
     control_parameters:
-      kp: 0.22224  #0.03277 #0.49460  Pásmo proporcionality - určité změně na vstupu odpovídá určitá změna na výstupu
-      ki: 0.00067  #0.00004 #0.00487  Integrační čas - určité změně na vstupu odpovídá určitá rychlost na výstupu
-      kd: 18.41252 #6.69813 #12.56301 Derivační čas - určité rychlosti změny na vstupu odpovídá určitá poloha regulačního orgánu
+      kp: 0.22224  # proporcionalita - určité změně na vstupu odpovídá určitá změna na výstupu
+      ki: 0.00067  # Integrační čas - určité změně na vstupu odpovídá určitá rychlost na výstupu
+      kd: 18.41252 # Derivační čas - určité rychlosti změny na vstupu odpovídá určitá poloha regulačního orgánu
 
 ###############################################################
 ###### LCD DISPLEJ ############################################
