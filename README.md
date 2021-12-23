@@ -11,15 +11,15 @@ Uprav zařízení a pod vygenerovaný kód nakopíruj kód níže
 
 # Použité komponenty
 
-[ESP8266 4CH relay board:](shorturl.at/qCTV0)
+[ESP8266 4CH relay board](shorturl.at/qCTV0)
 
-[SSR rele:](shorturl.at/ltyCD)
+[SSR rele](shorturl.at/ltyCD)
 
-[SSR rele chladič V1:](shorturl.at/nxMNQ)
+[SSR rele chladič V1](shorturl.at/nxMNQ)
 
-[SSR rele chladič V2:](shorturl.at/pLQYZ)
+[SSR rele chladič V2](shorturl.at/pLQYZ)
 
-[LCD displej:](shorturl.at/jyRVX)
+[LCD displej](shorturl.at/jyRVX)
 
 # Schéma zapojení
 
