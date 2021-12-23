@@ -1,20 +1,21 @@
 # Postup
-`
+
 Je nutne mít Home Assistant (dále jen HA) server třeba na Raspberry Pi3 nebo lepší.
 V HA si nainstalujte doplněk ESPHome (oficiální integrace)
 V ESPHome vytvoř nové zařízení postavené na ESP8266 a zadej název tvojí WIFI a heslo.
 Uprav zařízení a pod vygenerovaný kód nakopíruj kód níže
-`
+
 
 
 
 
 # Použité komponenty
-ESP8266 4CH relay board:  shorturl.at/qCTV0
-SSR rele:                 shorturl.at/ltyCD
-SSR rele chladič V1:      shorturl.at/nxMNQ
-SSR rele chladič V2:      shorturl.at/pLQYZ
-LCD displej:              shorturl.at/jyRVX
+
+[ESP8266 4CH relay board:](shorturl.at/qCTV0)
+[SSR rele:](shorturl.at/ltyCD)
+[SSR rele chladič V1:](shorturl.at/nxMNQ)
+[SSR rele chladič V2:](shorturl.at/pLQYZ)
+[LCD displej:](shorturl.at/jyRVX)
 
 # Schéma zapojení
 
