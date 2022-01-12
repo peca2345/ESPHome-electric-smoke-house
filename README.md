@@ -22,6 +22,8 @@ Uprav zařízení a pod vygenerovaný kód nakopíruj kód níže
 
 [LCD displej](https://shorturl.at/jyRVX)
 
+https://dratek.cz/arduino/1753-linearni-regulator-napeti-dc-lm317.html
+
 # Schéma zapojení
 
 
