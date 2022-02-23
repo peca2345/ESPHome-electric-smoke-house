@@ -49,6 +49,7 @@ https://dratek.cz/arduino/1753-linearni-regulator-napeti-dc-lm317.html
 
 # Schema:
 
+![Schematic](https://github.com/peca2345/ESPHome-udirna/blob/main/test.png?raw=true)
 
 # Gallery
 
