@@ -16,7 +16,7 @@ Features:
 - manual control buttons
 - fuel: wood chips
 
-Buttons function:
+Button function:
 - TEMP UP: target temp. +1°C (long press +5°C and very long press set thermostat to 65°C)
 - TEMP DOWN: target temp. -1°C (long press -5°C and very long press set thermostat to 0°C)
 - THERMOSTAT: ON/OFF thermostat
