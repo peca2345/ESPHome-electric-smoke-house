@@ -28,10 +28,6 @@ Button function:
 - FAN UP: +10% speed (long press max. speed)
 - FAN DOWN: -10% speed (long press OFF)
 
-## Step by Step.. (prototype)
-
-![StepbyStep](https://github.com/peca2345/ESPHome-electric-smoke-house/blob/main/animation1.gif?raw=true)
-
 ## Required knowledge:
 
 - Home Assistant: [tutorial](https://www.youtube.com/watch?v=u_aKcf_F1MM) 
@@ -84,7 +80,11 @@ Button function:
 
 ## Schema:
 
-![Schema](https://github.com/peca2345/ESPHome-electric-smoke-house/blob/main/SCHEMA_V5_FINAL.png?raw=true)
+![Schema](https://github.com/peca2345/ESPHome-electric-smoke-house/blob/main/schema.png?raw=true)
+
+## Step by Step.. (prototype)
+
+![StepbyStep](https://github.com/peca2345/ESPHome-electric-smoke-house/blob/main/animation1.gif?raw=true)
 
 ## LCD:
 
