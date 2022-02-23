@@ -76,17 +76,19 @@ Features:
 
 ## Schema:
 
-
 ![Schema](https://github.com/peca2345/ESPHome-electric-smoke-house/blob/main/SCHEMA_V5_FINAL.png?raw=true)
 
+## Home Assistant: (web browser)
 
-## Gallery
-
-https://photos.app.goo.gl/iQ432f7vACJFKvrUA
+![HA](https://github.com/peca2345/ESPHome-electric-smoke-house/blob/main/HA.png?raw=true)
 
 ## Grafana:
 
-![Grafan](https://github.com/peca2345/ESPHome-udirna/blob/main/grafana.png?raw=true)
+![Grafana](https://github.com/peca2345/ESPHome-udirna/blob/main/grafana.png?raw=true)
+
+## Gallery:
+
+https://photos.app.goo.gl/iQ432f7vACJFKvrUA
 
 ## ESPHome code
 ```
