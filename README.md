@@ -748,11 +748,15 @@ switch:
       - fan.turn_off: # a vypne vibrator
           id: vibrator_pwm 
           
-  # VIBRATOR AUTO WAIT FOR TEMP             # automatic control interval condition 
-  - platform: template                      # only after reaching a given temperature from the start does the thermometer switch it on
-    name: "iudirna_vibrator_wait_temp"      # this will ensure that it will not vibrate from the beginning when melting but only                                       
-    id: vibrator_wait_temp                  # after reaching the specified temperature
+  # VIBRATOR AUTO WAIT FOR TEMP             
+  - platform: template                      
+    name: "iudirna_vibrator_wait_temp"                                            
+    id: vibrator_wait_temp                  
     optimistic: true
+    # automatic control interval condition 
+    # only after reaching a given temperature from the start does the thermometer switch it on
+    # this will ensure that it will not vibrate from the beginning when melting but only 
+    # after reaching the specified temperature
     
   # RELAY2 - INDOOR LIGHT
   - platform: gpio #switch
