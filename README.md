@@ -86,7 +86,7 @@ Button function:
 
 ## Home Assistant: (web browser)
 
-![HA](https://github.com/peca2345/ESPHome-electric-smoke-house/blob/main/HA.png?raw=true)
+![HA](https://github.com/peca2345/ESPHome-electric-smoke-house/blob/main/HA2.png?raw=true)
 
 ## Grafana:
 
