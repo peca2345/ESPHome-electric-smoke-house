@@ -4,7 +4,7 @@ This is a tutorial on automating a smokehouse with a smoke generator.
 
 ## Description:
 
-Features:
+**Features:
 
 - PID thermal regulation
 - measurement of smoke, smokehouse and internal meat temperature
@@ -17,7 +17,7 @@ Features:
 - manual control buttons
 - fuel: wood chips
 
-Button function:
+**Button function:
 - TEMP UP: target temp. +1°C (long press +5°C and very long press set thermostat to 65°C)
 - TEMP DOWN: target temp. -1°C (long press -5°C and very long press set thermostat to 0°C)
 - THERMOSTAT: ON/OFF thermostat
