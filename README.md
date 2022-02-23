@@ -27,6 +27,10 @@ Button function:
 - FAN UP: +10% speed (long press max. speed)
 - FAN DOWN: -10% speed (long press OFF)
 
+## Step by Step..
+
+![StepbyStep](https://github.com/peca2345/ESPHome-electric-smoke-house/blob/main/animation1.gif?raw=true)
+
 ## Required knowledge:
 
 - Home Assistant: [YTB](https://www.youtube.com/watch?v=u_aKcf_F1MM) 
@@ -75,14 +79,9 @@ Button function:
 
 - Oven E14 holder/socket 1pcs: [ALI](https://www.aliexpress.com/item/1005002315411008.html?spm=a2g0o.productlist.0.0.13b1360dM2UuIt&algo_pvid=8430a2c1-8756-48be-ad43-43a0ccd8533b&algo_exp_id=8430a2c1-8756-48be-ad43-43a0ccd8533b-10&pdp_ext_f=%7B%22sku_id%22%3A%2212000020046504898%22%7D&pdp_pi=-1%3B37.47%3B-1%3B3370%40salePrice%3BCZK%3Bsearch-mainSearch) 
 
-
 ## Schema:
 
 ![Schema](https://github.com/peca2345/ESPHome-electric-smoke-house/blob/main/SCHEMA_V5_FINAL.png?raw=true)
-
-## Animation:
-
-![LCD](https://github.com/peca2345/ESPHome-electric-smoke-house/blob/main/animation.gif?raw=true)
 
 ## LCD:
 
