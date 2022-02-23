@@ -6,24 +6,35 @@
 This is a tutorial on automating a smokehouse with a smoke generator.
 
 Features:
+
 -PID thermal regulation
+
 -measurement of smoke, smokehouse and internal meat temperature
+
 -auto fan/fire speed control
+
 -auto vibrator (improve wood chip burning)
+
 -WIFI/cloud control (via Home Assistant server)
+
 -LCD display
+
 -manual control buttons
+
 -fuel: wood chips
 
 # Required knowledge:
 
 Home Assistant: [YTB](https://www.youtube.com/watch?v=u_aKcf_F1MM) 
+
 ESPHome:        [YTB](https://www.youtube.com/watch?v=mj-24SZLQKk) 
+
 Soldering:      [YTB](https://www.youtube.com/watch?v=6rmErwU5E-k) 
 
 # Used components:
 
 [ESP8266 4CH relay board](https://www.aliexpress.com/item/32948585494.html?dp=608841a56be8eefc6c2eed35&cn=ah&aff_fcid=6b02168ff7f54818a786e9c21d401c2f-1640297845925-05877-_9IM1Y0&tt=CPS_NORMAL&aff_fsk=_9IM1Y0&aff_platform=portals-tool&sk=_9IM1Y0&aff_trace_key=6b02168ff7f54818a786e9c21d401c2f-1640297845925-05877-_9IM1Y0&terminal_id=d7554e9ae9fe4e76878e8694ca0d1dcc)
+
 ![This is an image](/assets/images/esp12f_4ch_board.png)
 
 [SSR rele](https://shorturl.at/ltyCD)
@@ -40,6 +51,7 @@ https://dratek.cz/arduino/1753-linearni-regulator-napeti-dc-lm317.html
 
 
 # Gallery
+
 https://photos.app.goo.gl/iQ432f7vACJFKvrUA
 
 # 3D print model:
