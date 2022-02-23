@@ -7,21 +7,13 @@ This is a tutorial on automating a smokehouse with a smoke generator.
 Features:
 
 - PID thermal regulation
-
 - measurement of smoke, smokehouse and internal meat temperature
-
 - fan automation - speed control according to smoke temperature
-
 - vibrator automation - when the smoke drops, it vibrates with the wood chips for better combustion
-
 - WIFI/cloud control (via Home Assistant server) + android or google home notification
-
 - wattmeter
-
 - LCD display
-
 - manual control buttons
-
 - fuel: wood chips
 
 Buttons function:
