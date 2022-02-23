@@ -25,7 +25,16 @@ Features:
 
 - fuel: wood chips
 
-Buttons funktion:
+Buttons function:
+- TEMP UP: target temp. +1°C (long press +5°C and very long press set thermostat to 65°C)
+- TEMP DOWN: target temp. -1°C (long press -5°C and very long press set thermostat to 0°C)
+- THERMOSTAT: ON/OFF thermostat
+- LIGHT IN: ON/OFF indoor light
+- LIGHT OUT: ON/OFF outdoor light
+- AUT. VIB: ON/OFF vibrator automation (vibrates with the chip at low smoke temperature)
+- AUT. FAN: ON/OFF fan automation (speed control according to smoke temperature)
+- FAN UP: +10% speed (long press max. speed)
+- FAN DOWN: -10% speed (long press OFF)
 
 ## Required knowledge:
 
@@ -79,6 +88,10 @@ Buttons funktion:
 ## Schema:
 
 ![Schema](https://github.com/peca2345/ESPHome-electric-smoke-house/blob/main/SCHEMA_V5_FINAL.png?raw=true)
+
+## LCD:
+
+![Schema](https://github.com/peca2345/ESPHome-electric-smoke-house/blob/main/LCD.png?raw=true)
 
 ## Home Assistant: (web browser)
 
