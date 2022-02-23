@@ -31,6 +31,8 @@ Features:
 
 - ESPHome:        [YTB](https://www.youtube.com/watch?v=mj-24SZLQKk) 
 
+- Grafana:        [YTB](https://www.youtube.com/watch?v=rKIHoqxxMek) 
+
 - Soldering:      [YTB](https://www.youtube.com/watch?v=6rmErwU5E-k) 
 
 ## Used components:
