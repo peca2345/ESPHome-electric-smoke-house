@@ -1,9 +1,8 @@
 # ESPHome - electric smoke house and smokebox
 
+This is a tutorial on automating a smokehouse with a smoke generator.
 
 ## Description:
-
-This is a tutorial on automating a smokehouse with a smoke generator.
 
 Features:
 
