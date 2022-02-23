@@ -91,7 +91,7 @@ Buttons function:
 
 ## LCD:
 
-![Schema](https://github.com/peca2345/ESPHome-electric-smoke-house/blob/main/LCD.png?raw=true)
+![Schema](https://github.com/peca2345/ESPHome-electric-smoke-house/blob/main/LCD2.png?raw=true)
 
 ## Home Assistant: (web browser)
 
