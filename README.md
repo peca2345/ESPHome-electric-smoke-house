@@ -1,7 +1,7 @@
-## ESPHome - electric smoke house and smokebox
+# ESPHome - electric smoke house and smokebox
 
 
-# Description:
+## Description:
 
 This is a tutorial on automating a smokehouse with a smoke generator.
 
@@ -25,7 +25,7 @@ Features:
 
 - fuel: wood chips
 
-# Required knowledge:
+## Required knowledge:
 
 - Home Assistant: [YTB](https://www.youtube.com/watch?v=u_aKcf_F1MM) 
 
@@ -33,7 +33,7 @@ Features:
 
 - Soldering:      [YTB](https://www.youtube.com/watch?v=6rmErwU5E-k) 
 
-# Used components:
+## Used components:
 
 ESP12F 4CH 1pcs: [ALI](https://www.aliexpress.com/item/1005001651180110.html?spm=a2g0o.productlist.0.0.3753351fOHL2kh&algo_pvid=da105da4-7014-4b55-bb39-96ff547ae06c&algo_exp_id=da105da4-7014-4b55-bb39-96ff547ae06c-13&pdp_ext_f=%7B%22sku_id%22%3A%2212000017011631427%22%7D&pdp_pi=-1%3B167.83%3B-1%3B-1%40salePrice%3BCZK%3Bsearch-mainSearch) 
 
@@ -72,20 +72,21 @@ Oven light 25W 230V 1pcs: [ALI](https://www.aliexpress.com/item/1005001265388691
 Oven E14 holder/socket 1pcs: [ALI](https://www.aliexpress.com/item/1005002315411008.html?spm=a2g0o.productlist.0.0.13b1360dM2UuIt&algo_pvid=8430a2c1-8756-48be-ad43-43a0ccd8533b&algo_exp_id=8430a2c1-8756-48be-ad43-43a0ccd8533b-10&pdp_ext_f=%7B%22sku_id%22%3A%2212000020046504898%22%7D&pdp_pi=-1%3B37.47%3B-1%3B3370%40salePrice%3BCZK%3Bsearch-mainSearch) 
 
 
-# Schema:
+## Schema:
 
 [HQ Schema](https://github.com/peca2345/ESPHome-udirna/blob/main/schema_v4_FINAL.bmp?raw=true) 
 
 ![Schematic](![obrazek](https://user-images.githubusercontent.com/58307338/155378047-13ed4251-3815-45c7-8eb6-30b14d6e2d1d.png))
 
-# Gallery
+## Gallery
 
 https://photos.app.goo.gl/iQ432f7vACJFKvrUA
 
-# 3D print model:
+## Grafana:
 
+![Grafana](![obrazek](https://github.com/peca2345/ESPHome-udirna/blob/main/grafana.png?raw=true))
 
-# ESPHome code
+## ESPHome code
 ```
 esphome:
   name: iudirna
