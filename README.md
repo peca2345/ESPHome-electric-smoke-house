@@ -1,4 +1,4 @@
-## ESPHome - smoke house /w smokebox
+## ESPHome - electric smoke house and smokebox
 
 
 # Description:
@@ -33,19 +33,42 @@ Soldering:      [YTB](https://www.youtube.com/watch?v=6rmErwU5E-k)
 
 # Used components:
 
-[ESP8266 4CH relay board](https://www.aliexpress.com/item/32948585494.html?dp=608841a56be8eefc6c2eed35&cn=ah&aff_fcid=6b02168ff7f54818a786e9c21d401c2f-1640297845925-05877-_9IM1Y0&tt=CPS_NORMAL&aff_fsk=_9IM1Y0&aff_platform=portals-tool&sk=_9IM1Y0&aff_trace_key=6b02168ff7f54818a786e9c21d401c2f-1640297845925-05877-_9IM1Y0&terminal_id=d7554e9ae9fe4e76878e8694ca0d1dcc)
+ESP12F 4CH 1pcs: [ALI](https://www.aliexpress.com/item/1005001651180110.html?spm=a2g0o.productlist.0.0.3753351fOHL2kh&algo_pvid=da105da4-7014-4b55-bb39-96ff547ae06c&algo_exp_id=da105da4-7014-4b55-bb39-96ff547ae06c-13&pdp_ext_f=%7B%22sku_id%22%3A%2212000017011631427%22%7D&pdp_pi=-1%3B167.83%3B-1%3B-1%40salePrice%3BCZK%3Bsearch-mainSearch) 
 
-![This is an image](/assets/images/esp12f_4ch_board.png)
+MCP23017 1pcs: [ALI](https://www.aliexpress.com/item/1005003141912496.html?spm=a2g0o.productlist.0.0.1ed148dasW0v52&algo_pvid=2d82d3bc-dff2-4938-b175-366b837c4bcd&algo_exp_id=2d82d3bc-dff2-4938-b175-366b837c4bcd-30&pdp_ext_f=%7B%22sku_id%22%3A%2212000024317936226%22%7D&pdp_pi=-1%3B79.81%3B-1%3B-1%40salePrice%3BCZK%3Bsearch-mainSearch) 
 
-[SSR rele](https://shorturl.at/ltyCD)
+SSR DIN 25A 1pcs: [ALI](faaf-47be-8fb2-69755da82c57-0&pdp_ext_f=%7B%22sku_id%22%3A%2212000027001195887%22%7D&pdp_pi=-1%3B297.08%3B-1%3B-1%40salePrice%3BCZK%3Bsearch-mainSearch) 
 
-[SSR rele chladič V1](https://shorturl.at/nxMNQ)
+PWM driver 2pcs: [ALI](https://www.aliexpress.com/item/1005001902539055.html?spm=a2g0o.productlist.0.0.55aa25c2GnqXDh&algo_pvid=16b38bb6-1d2d-4fd0-b4b6-a7989aac81fe&algo_exp_id=16b38bb6-1d2d-4fd0-b4b6-a7989aac81fe-45&pdp_ext_f=%7B%22sku_id%22%3A%2212000018072058627%22%7D&pdp_pi=-1%3B24.39%3B-1%3B-1%40salePrice%3BCZK%3Bsearch-mainSearch) 
 
-[SSR rele chladič V2](https://shorturl.at/pLQYZ)
+Buttons 9pcs: [ALI](https://www.aliexpress.com/item/32850618919.html?spm=a2g0o.productlist.0.0.5d872a47Yax7qv&algo_pvid=6443c32b-9e2f-425b-8ad9-328703a715bd&algo_exp_id=6443c32b-9e2f-425b-8ad9-328703a715bd-42&pdp_ext_f=%7B%22sku_id%22%3A%2265177915549%22%7D&pdp_pi=-1%3B37.69%3B-1%3B-1%40salePrice%3BCZK%3Bsearch-mainSearch) 
 
-[LCD displej](https://shorturl.at/jyRVX)
+LCD 20x4 5V 1pcs: [ALI](https://www.aliexpress.com/item/4001135515638.html?spm=a2g0o.productlist.0.0.70094d0fWGY9Jz&algo_pvid=392c7a21-9633-491f-82bb-b0336551b1ff&algo_exp_id=392c7a21-9633-491f-82bb-b0336551b1ff-2&pdp_ext_f=%7B%22sku_id%22%3A%2210000014747778203%22%7D&pdp_pi=-1%3B89.57%3B-1%3B-1%40salePrice%3BCZK%3Bsearch-mainSearch) 
 
-https://dratek.cz/arduino/1753-linearni-regulator-napeti-dc-lm317.html
+AC-DC 12V 3.3A MD-40-12 DIN 1pcs: [ALI](https://www.aliexpress.com/item/1005002024975538.html?spm=a2g0o.productlist.0.0.5b66639bc7g2C6&algo_pvid=29039fdf-9abb-480c-a1ec-fdcd6659b322&aem_p4p_detail=2022022304181914498879841991630001808887&algo_exp_id=29039fdf-9abb-480c-a1ec-fdcd6659b322-0&pdp_ext_f=%7B%22sku_id%22%3A%2212000018453302440%22%7D&pdp_pi=-1%3B380.44%3B-1%3B-1%40salePrice%3BCZK%3Bsearch-mainSearch) 
+
+Switch AC 250V 16A 2pcs: [ALI](https://www.aliexpress.com/item/32806585772.html?spm=a2g0o.productlist.0.0.4c533cadEbQ4TY&algo_pvid=42fad9ed-7d3e-41f7-be61-bb7bcfac7a62&algo_exp_id=42fad9ed-7d3e-41f7-be61-bb7bcfac7a62-35&pdp_ext_f=%7B%22sku_id%22%3A%2264444197255%22%7D&pdp_pi=-1%3B27.27%3B-1%3B-1%40salePrice%3BCZK%3Bsearch-mainSearch) 
+
+Dallas temp. Sensor 4pcs: [ALI](https://www.aliexpress.com/item/32839776524.html) 
+
+FAN 5025 12V 6200rpm 1pcs: [ALI](https://www.aliexpress.com/item/33049767300.html?spm=a2g0o.order_list.0.0.21ef1802FV0N98) 
+
+Vibrator DC 1.5-6V 22400RPM 1pcs: [ALI](https://www.aliexpress.com/item/1005003309418737.html?spm=a2g0o.order_list.0.0.21ef1802FV0N98) 
+
+Wattmeter PZEM-004T 100A 1pcs: [ALI](https://www.aliexpress.com/item/33043137964.html?spm=a2g0o.productlist.0.0.39996e27jijA6Q&algo_pvid=1952f64e-d59d-4ee7-b973-b8eb7d3aefad&algo_exp_id=1952f64e-d59d-4ee7-b973-b8eb7d3aefad-39&pdp_ext_f=%7B%22sku_id%22%3A%2267438540147%22%7D&pdp_pi=-1%3B318.14%3B-1%3B-1%40salePrice%3BCZK%3Bsearch-mainSearch) 
+
+Heater 2600W 230V 1pcs: [ALI](https://www.aliexpress.com/item/1005003584466174.html?spm=a2g0o.detail.1000014.9.6a92713dVDrXSB&gps-id=pcDetailBottomMoreOtherSeller&scm=1007.13338.177756.0&scm_id=1007.13338.177756.0&scm-url=1007.13338.177756.0&pvid=0e2cb83b-8521-45df-9570-7829ea86d0f4&_t=gps-id:pcDetailBottomMoreOtherSeller,scm-url:1007.13338.177756.0,pvid:0e2cb83b-8521-45df-9570-7829ea86d0f4,tpp_buckets:668%232846%238108%231977&pdp_ext_f=%257B%2522sku_id%2522%253A%252212000027300025510%2522%252C%2522sceneId%2522%253A%252230050%2522%257D&pdp_pi=-1%253B603.47%253B-1%253B-1%2540salePrice%253BCZK%253Brecommend-recommend) 
+
+LED diode set 1pcs: [ALI](https://www.aliexpress.com/item/1005003323707856.html?dp=61e453ee0fa2025c4ba43400&cn=ah&aff_fcid=bd9ed3937ddf4288850b01c823d9a1d7-1645625483275-03644-_d6jWDbY&aff_fsk=_d6jWDbY&aff_platform=link-c-tool&sk=_d6jWDbY&aff_trace_key=bd9ed3937ddf4288850b01c823d9a1d7-1645625483275-03644-_d6jWDbY&terminal_id=f09dc59f89d1480fb0cfa10490f657c7&afSmartRedirect=n) 
+
+Resistors set 1pcs: [ALI](https://www.aliexpress.com/item/1005002631550177.html?spm=a2g0o.productlist.0.0.1ed36405DfJzoB&algo_pvid=91b60b6b-d8f3-4351-9d1b-b23bf0ba2b69&aem_p4p_detail=202202230706528513372260889730002489868&algo_exp_id=91b60b6b-d8f3-4351-9d1b-b23bf0ba2b69-0&pdp_ext_f=%7B%22sku_id%22%3A%2212000021480015802%22%7D&pdp_pi=-1%3B64.29%3B-1%3B-1%40salePrice%3BCZK%3Bsearch-mainSearch) 
+
+LED light outdoor 20W 230V 1pcs: [ALI](https://www.aliexpress.com/item/4001183488400.html?spm=a2g0o.productlist.0.0.630446b6KVFPmV&algo_pvid=2f0e5a2a-f81a-4789-89be-66a6cdb0ea9a&algo_exp_id=2f0e5a2a-f81a-4789-89be-66a6cdb0ea9a-50&pdp_ext_f=%7B%22sku_id%22%3A%2212000027495977514%22%7D&pdp_pi=-1%3B264.27%3B-1%3B-1%40salePrice%3BCZK%3Bsearch-mainSearch) 
+
+Oven light 25W 230V 1pcs: [ALI](https://www.aliexpress.com/item/1005001265388691.html?spm=a2g0o.productlist.0.0.66ad92e8N4pHp6&algo_pvid=4f47a72a-3b68-4385-8d38-53bfc0c93ff2&algo_exp_id=4f47a72a-3b68-4385-8d38-53bfc0c93ff2-2&pdp_ext_f=%7B%22sku_id%22%3A%2212000015518228734%22%7D&pdp_pi=-1%3B17.74%3B-1%3B1751%40salePrice%3BCZK%3Bsearch-mainSearch) 
+
+Oven E14 holder/socket 1pcs: [ALI](https://www.aliexpress.com/item/1005002315411008.html?spm=a2g0o.productlist.0.0.13b1360dM2UuIt&algo_pvid=8430a2c1-8756-48be-ad43-43a0ccd8533b&algo_exp_id=8430a2c1-8756-48be-ad43-43a0ccd8533b-10&pdp_ext_f=%7B%22sku_id%22%3A%2212000020046504898%22%7D&pdp_pi=-1%3B37.47%3B-1%3B3370%40salePrice%3BCZK%3Bsearch-mainSearch) 
+
 
 # Schema:
 
