@@ -11,6 +11,7 @@ Features:
 - fan automation - speed control according to smoke temperature
 - vibrator automation - when the smoke drops, it vibrates with the wood chips for better combustion
 - WIFI/cloud control (via Home Assistant server) + android or google home notification
+- writing sensor data to grafana
 - wattmeter
 - LCD display
 - manual control buttons
