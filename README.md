@@ -103,7 +103,7 @@ Buttons function:
 
 ## Android notification:
 
-![android](![obrazek](https://user-images.githubusercontent.com/58307338/155407713-74f10288-5d43-4d7d-bf97-64e25dd9b7d2.png))
+![android](https://user-images.githubusercontent.com/58307338/155407713-74f10288-5d43-4d7d-bf97-64e25dd9b7d2.png)
 
 ## Gallery:
 
