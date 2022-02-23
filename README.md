@@ -76,9 +76,8 @@ Features:
 
 ## Schema:
 
-[HQ version](https://github.com/peca2345/ESPHome-udirna/blob/main/schema_v4_FINAL.bmp?raw=true) 
 
-![Schema](https://user-images.githubusercontent.com/58307338/155378047-13ed4251-3815-45c7-8eb6-30b14d6e2d1d.png)
+![Schema](https://github.com/peca2345/ESPHome-electric-smoke-house/blob/main/SCHEMA_V5_FINAL.png?raw=true)
 
 
 ## Gallery
