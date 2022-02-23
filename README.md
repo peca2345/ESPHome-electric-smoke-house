@@ -76,7 +76,8 @@ Oven E14 holder/socket 1pcs: [ALI](https://www.aliexpress.com/item/1005002315411
 
 [HQ Schema](https://github.com/peca2345/ESPHome-udirna/blob/main/schema_v4_FINAL.bmp?raw=true) 
 
-![Schematic](![obrazek](https://user-images.githubusercontent.com/58307338/155378047-13ed4251-3815-45c7-8eb6-30b14d6e2d1d.png))
+![Schema](https://user-images.githubusercontent.com/58307338/155378047-13ed4251-3815-45c7-8eb6-30b14d6e2d1d.png)
+
 
 ## Gallery
 
@@ -84,7 +85,7 @@ https://photos.app.goo.gl/iQ432f7vACJFKvrUA
 
 ## Grafana:
 
-![Grafana](![obrazek](https://github.com/peca2345/ESPHome-udirna/blob/main/grafana.png?raw=true))
+![Grafan](https://github.com/peca2345/ESPHome-udirna/blob/main/grafana.png?raw=true)
 
 ## ESPHome code
 ```
