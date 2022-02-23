@@ -80,6 +80,10 @@ Button function:
 
 ![Schema](https://github.com/peca2345/ESPHome-electric-smoke-house/blob/main/SCHEMA_V5_FINAL.png?raw=true)
 
+## Animation:
+
+![LCD](https://github.com/peca2345/ESPHome-electric-smoke-house/blob/main/animation.gif?raw=true)
+
 ## LCD:
 
 ![LCD](https://github.com/peca2345/ESPHome-electric-smoke-house/blob/main/LCD3.png?raw=true)
