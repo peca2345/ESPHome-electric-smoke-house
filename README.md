@@ -27,7 +27,7 @@ Button function:
 - FAN UP: +10% speed (long press max. speed)
 - FAN DOWN: -10% speed (long press OFF)
 
-## Step by Step..
+## Step by Step.. (prototype)
 
 ![StepbyStep](https://github.com/peca2345/ESPHome-electric-smoke-house/blob/main/animation1.gif?raw=true)
 
