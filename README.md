@@ -25,6 +25,8 @@ Features:
 
 - fuel: wood chips
 
+Buttons funktion:
+
 ## Required knowledge:
 
 - Home Assistant: [YTB](https://www.youtube.com/watch?v=u_aKcf_F1MM) 
