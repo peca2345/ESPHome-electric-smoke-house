@@ -531,21 +531,18 @@ binary_sensor:
       then:
         - climate.control:
             id: pid_climate
-#            mode: 'HEAT'
             target_temperature: !lambda return (id(pid_climate).target_temperature + 1.0);
     - min_length: 500ms
       max_length: 2000ms
       then:
         - climate.control:
             id: pid_climate
-#            mode: 'HEAT'
             target_temperature: !lambda return (id(pid_climate).target_temperature + 5.0);    
     - min_length: 2000ms
       max_length: 6000ms
       then:
         - climate.control:
             id: pid_climate
-#            mode: 'HEAT'
             target_temperature: !lambda return (id(pid_climate).target_temperature = 65.0);   
             
   # BUTTON THERMOSTAT TARGET TEMP -1°C 
@@ -564,21 +561,18 @@ binary_sensor:
       then:
         - climate.control:
             id: pid_climate
-#            mode: 'HEAT'
             target_temperature: !lambda return (id(pid_climate).target_temperature - 1.0);
     - min_length: 500ms
       max_length: 2000ms
       then:
         - climate.control:
             id: pid_climate
-#            mode: 'HEAT'
             target_temperature: !lambda return (id(pid_climate).target_temperature - 5.0);
     - min_length: 2000ms
       max_length: 6000ms
       then:
         - climate.control:
             id: pid_climate
-#            mode: 'HEAT'
             target_temperature: !lambda return (id(pid_climate).target_temperature = 0.0);
             
   # BUTTON FAN SPEED +1
@@ -871,9 +865,6 @@ switch:
           - climate.control:
               id: pid_climate
               mode: 'HEAT'
-      
-
-      
       
 ```
 
