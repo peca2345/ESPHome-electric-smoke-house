@@ -10,11 +10,11 @@ Features:
 
 - measurement of smoke, smokehouse and internal meat temperature
 
-- auto fan/fire speed control
+- fan automation - speed control according to smoke temperature
 
-- auto vibrator (improve wood chip burning)
+- vibrator automation - when the smoke drops, it vibrates with the wood chips for better combustion
 
-- WIFI/cloud control (via Home Assistant server)
+- WIFI/cloud control (via Home Assistant server) + android or google home notification
 
 - wattmeter
 
