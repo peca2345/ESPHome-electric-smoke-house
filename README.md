@@ -27,11 +27,11 @@ Features:
 
 # Required knowledge:
 
-Home Assistant: [YTB](https://www.youtube.com/watch?v=u_aKcf_F1MM) 
+- Home Assistant: [YTB](https://www.youtube.com/watch?v=u_aKcf_F1MM) 
 
-ESPHome:        [YTB](https://www.youtube.com/watch?v=mj-24SZLQKk) 
+- ESPHome:        [YTB](https://www.youtube.com/watch?v=mj-24SZLQKk) 
 
-Soldering:      [YTB](https://www.youtube.com/watch?v=6rmErwU5E-k) 
+- Soldering:      [YTB](https://www.youtube.com/watch?v=6rmErwU5E-k) 
 
 # Used components:
 
