@@ -34,17 +34,19 @@ Button function:
 
 ## Required knowledge:
 
-- Home Assistant: [YTB](https://www.youtube.com/watch?v=u_aKcf_F1MM) 
+- Home Assistant: [tutorial](https://www.youtube.com/watch?v=u_aKcf_F1MM) 
 
-- ESPHome:        [YTB](https://www.youtube.com/watch?v=mj-24SZLQKk) 
+- ESPHome:        [tutorial](https://www.youtube.com/watch?v=mj-24SZLQKk) 
 
-- Grafana:        [YTB](https://www.youtube.com/watch?v=rKIHoqxxMek) 
+- Grafana:        [tutorial](https://www.youtube.com/watch?v=rKIHoqxxMek) 
 
-- Soldering:      [YTB](https://www.youtube.com/watch?v=6rmErwU5E-k) 
+- Soldering:      [tutorial](https://www.youtube.com/watch?v=6rmErwU5E-k) 
 
 ## Used components:
 
 - ESP12F 4CH 1pcs: [ALI](https://www.aliexpress.com/item/1005001651180110.html?spm=a2g0o.productlist.0.0.3753351fOHL2kh&algo_pvid=da105da4-7014-4b55-bb39-96ff547ae06c&algo_exp_id=da105da4-7014-4b55-bb39-96ff547ae06c-13&pdp_ext_f=%7B%22sku_id%22%3A%2212000017011631427%22%7D&pdp_pi=-1%3B167.83%3B-1%3B-1%40salePrice%3BCZK%3Bsearch-mainSearch) 
+
+- ESB/TTL programmer: [ALI](https://www.aliexpress.com/item/4000120687489.html?dp=61e453ee0fa2025c4ba43400&cn=ah&aff_fcid=cad159442bf446d5a8ee670ff9096982-1645653614371-04847-_d6jWDbY&aff_fsk=_d6jWDbY&aff_platform=link-c-tool&sk=_d6jWDbY&aff_trace_key=cad159442bf446d5a8ee670ff9096982-1645653614371-04847-_d6jWDbY&terminal_id=f09dc59f89d1480fb0cfa10490f657c7&afSmartRedirect=n) 
 
 - MCP23017 1pcs: [ALI](https://www.aliexpress.com/item/1005003141912496.html?spm=a2g0o.productlist.0.0.1ed148dasW0v52&algo_pvid=2d82d3bc-dff2-4938-b175-366b837c4bcd&algo_exp_id=2d82d3bc-dff2-4938-b175-366b837c4bcd-30&pdp_ext_f=%7B%22sku_id%22%3A%2212000024317936226%22%7D&pdp_pi=-1%3B79.81%3B-1%3B-1%40salePrice%3BCZK%3Bsearch-mainSearch) 
 
