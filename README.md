@@ -78,6 +78,10 @@ This is a tutorial on automating a smokehouse with a smoke generator.
 
 - Oven E14 holder/socket 1pcs: [ALI](https://www.aliexpress.com/item/1005002315411008.html?spm=a2g0o.productlist.0.0.13b1360dM2UuIt&algo_pvid=8430a2c1-8756-48be-ad43-43a0ccd8533b&algo_exp_id=8430a2c1-8756-48be-ad43-43a0ccd8533b-10&pdp_ext_f=%7B%22sku_id%22%3A%2212000020046504898%22%7D&pdp_pi=-1%3B37.47%3B-1%3B3370%40salePrice%3BCZK%3Bsearch-mainSearch) 
 
+- DCIN jack panel 5.5x2.1 5pcs set: [ALI](https://www.aliexpress.com/item/4001152562632.html?spm=a2g0o.productlist.0.0.2e873c6bL0wNSl&algo_pvid=a0e5bdbc-ed83-4ba7-a318-e0c6501c086a&algo_exp_id=a0e5bdbc-ed83-4ba7-a318-e0c6501c086a-9&pdp_ext_f=%7B%22sku_id%22%3A%2212000027097673535%22%7D&pdp_pi=-1%3B27.93%3B-1%3B-1%40salePrice%3BCZK%3Bsearch-mainSearch) 
+
+- DCIN jack cable 5.5x2.1 5pcs set 1pcs: [ALI](https://www.aliexpress.com/item/1005001816665743.html?spm=a2g0o.productlist.0.0.2e873c6bL0wNSl&algo_pvid=da944abd-c0a1-4de6-b6ad-af29d6137c9c&algo_exp_id=da944abd-c0a1-4de6-b6ad-af29d6137c9c-58&pdp_ext_f=%7B%22sku_id%22%3A%2212000017730112751%22%7D&pdp_pi=-1%3B59.42%3B-1%3B953%40salePrice%3BCZK%3Bsearch-mainSearch) 
+
 ## Schema:
 
 ![Schema](https://github.com/peca2345/ESPHome-electric-smoke-house/blob/main/schema.png?raw=true)
