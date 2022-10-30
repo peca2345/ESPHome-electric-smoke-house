@@ -166,6 +166,7 @@ dallas:
 display: 
   - platform: lcd_pcf8574
     dimensions: 20x4
+    update_interval: 2s
     address: # detected from log with i2c scan enabled
     lambda: |-
       it.printf(0, 0, "Udirna: %.0f", id(iudirna_teplota1).state);
