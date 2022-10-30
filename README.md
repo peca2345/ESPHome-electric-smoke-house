@@ -166,7 +166,7 @@ dallas:
 display: 
   - platform: lcd_pcf8574
     dimensions: 20x4
-    update_interval: 2s
+    update_interval: 2s # LCD 2004A may have problem with <2s - wifi not working
     address: # detected from log with i2c scan enabled
     lambda: |-
       it.printf(0, 0, "Udirna: %.0f", id(iudirna_teplota1).state);
